@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+
+    <fieldset>
+        <legend>Your Feedback</legend>
+        <form action="mailto:bivekgiri123@gmail.com?subject=Hello" method="post" enctype="text/plain">
+            <p>
+                <label for="mail">Email</label>
+                <input type="mail" name="mail" id="mail" placeholder="Enter Your Email" required>
+                
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password Field" required>
+            </p>
+            <p>
+                <label for="username">Username</label>
+                <input type="username" name="username" id="username" placeholder="Enter Your Name" maxlength="10" required>
+            </p>
+
+            <p>
+                <h3>Select Your Gender</h3>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+
+            </p>
+
+            <P>
+                <h3>Select Your Courses</h3>
+
+                <label for="mern">MERN</label>
+                <input type="checkbox" name="courses" id="mern" value="mern">
+
+                <label for="python">Python</label>
+                <input type="checkbox" name="courses" id="python" value="python">
+
+                <label for="web">Web Development</label>
+                <input type="checkbox" name="courses" id="web" value="web">
+            </p>
+
+            <p>
+                <h3>Select Your Country</h3>
+                <select name="country" id="country">
+                    
+                    <option disabled selected value="">Select an option</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="japan">Japan</option>
+                </select>
+            </p>
+
+            <p>
+                <h3>Select Favourite Coffee</h3>
+                <select name="coffee" id="">
+                    <optgroup label="Hard Coffee">
+                        <option value="espresso">Espresso</option>
+                        <option value="mochiato">Mochiato</option>
+                    </optgroup>
+                    <optgroup label="Light Coffee">
+                        <option value="cappuccino">Cappuccino</option>
+                        <option value="americano">Americano</option>
+                    </optgroup>
+                </select>
+            </p>
+            
+            <p>
+                <label for="date">Select Date of Joining</label>
+                <input type="date" id="date" name="date">
+            </p>
+
+            <p>
+                <label for="color">Select Preferred Color</label>
+                <input type="color" id="color" name="color">
+            </p>
+            <p>
+                <textarea placeholder="Type Message" name="msg" id="msg" cols="40" rows="10"></textarea>
+            </p>
+            
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+
+
+        </form>
+    </fieldset>
+    
+</body>
+</html>
