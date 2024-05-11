@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Feedback Form</title>
 </head>
 <body>
-    <h1>This is my Contact Page</h1>
+    <h1>Feedback Form</h1>
 
     <fieldset>
         <legend>Your Feedback</legend>
-        <form action="">
+        <form action="mailto:bivekgiri123@gmail.com?subject=Hello" method="post" enctype="text/plain">
             <p>
                 <label for="mail">Email</label>
                 <input type="mail" name="mail" id="mail" placeholder="Enter Your Email" required>
@@ -76,59 +76,21 @@
             
             <p>
                 <label for="date">Select Date of Joining</label>
-                <input type="text">
+                <input type="date" id="date" name="date">
             </p>
+
+            <p>
+                <label for="color">Select Preferred Color</label>
+                <input type="color" id="color" name="color">
+            </p>
+            <p>
+                <textarea placeholder="Type Message" name="msg" id="msg" cols="40" rows="10"></textarea>
+            </p>
+            
 
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
 
-
-        </form>
-    </fieldset>
-
-    <fieldset>
-        <legend>Your Feedback</legend>
-        <form action="mailto:bivekgiri123@gmail.com" method="post" enctype="text/plain">
-            <p>
-                <label for="mail">Email</label>
-                <input type="mail" name="mail" id="mail" placeholder="Enter Your Email" required>
-                
-            </p>
-
-            <p>
-                <label for="username">Username</label>
-                <input type="username" name="username" id="username" placeholder="Enter Your Name" maxlength="10" required>
-            </p>
-
-            <p>
-                <h3>Select Your Gender</h3>
-                <label for="male">Male</label>
-                <input type="radio" name="gender" id="male" value="male">
-
-                <label for="female">Female</label>
-                <input type="radio" name="gender" id="female" value="female">
-
-            </p>
-
-            <P>
-                <h3>Select Your Courses</h3>
-
-                <label for="mern">MERN</label>
-                <input type="checkbox" name="courses" id="mern" value="mern">
-
-                <label for="python">Python</label>
-                <input type="checkbox" name="courses" id="python" value="python">
-
-                <label for="web">Web Development</label>
-                <input type="checkbox" name="courses" id="web" value="web">
-            </p>
-
-            <textarea placeholder="Type Message" name="msg" id="msg" cols="30" rows="10"></textarea>
-
-            <br>
-
-            <button type="reset">Reset</button>
-            <button type="submit">Submit</button>
 
         </form>
     </fieldset>
